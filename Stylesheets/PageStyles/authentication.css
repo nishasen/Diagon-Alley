@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.auth-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap:1rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.field-size {
+    width: 20rem;
+}
+
+.auth-div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.checkbox {
+    height: 18px;
+    width: 18px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem
+}

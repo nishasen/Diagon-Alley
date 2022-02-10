@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NemBusket-signup</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">        
+        <div class="nav-logo">
+            <a href="/index.html" class="btn-link">
+                <h2 href="/index.html" class="nav-header text-primary">
+                    Nem<span class="header-span text-primary-hover">Busket</span>
+                </h2>
+            </a>
+        </div>
+        <div class="nav-left">
+            <input type="search" placeholder="Search your choice" class="basic-textfield-outlined nav-search" id="search">
+            <button class="btn btn-md icon-md search-btn">
+                <i class="fa fa-search " aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="nav-right">
+            <div class="header-icons">
+                <div class="badge-icon badge-wrapper">
+                    <button class="btn btn-lg icon-lg">
+                        <a href="/Pages/WishlistManagement/wishlist.html" class="btn-link text-span hover-red">
+                            <i class="fa fa-heart-o"></i>
+                        </a>
+                    </button>
+                    <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
+                </div>
+                <div class="badge-icon badge-wrapper">
+                    <button class="btn btn-lg icon-lg">
+                        <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </button>
+                    <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
+                </div>
+                <button class="btn btn-lg icon-lg">
+                    <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
+                        <i class="fa fa-user-circle-o"></i>
+                    </a>
+                </button>
+            </div>
+            <button class="btn btn-md nav-right-btn">
+                <a href="/Pages/Authentication/login.html" class="btn btn-link btn-primary-contained">Login</a>
+            </button>
+        </div>
+    </nav> 
+    <div class="main">
+        <form class="auth-cards">
+            <h2 class="text-header">Sign up</h2>
+            <div class="basic-textfield-outlined textfield-label field-size">
+                <label for="textfield-label-outlined label-color">Email</label>
+                <input type="text" name="outlined" id="basic-outlined" class="filled-color" id="email">
+            </div>
+            <div class="basic-textfield-outlined textfield-label field-size">
+                <label for="textfield-label-outlined label-color">Password</label>
+                <input type="password" name="outlined" id="basic-outlined" class="filled-color" id="password">
+            </div>
+            <div class="auth-div">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" name="remember-me" value="Remember-me" class="checkbox">
+                    <label for="remember-me">I accept all terms and conditions</label>
+                </div>
+            </div>
+            <div class="big-btn-container">
+                <button class="btn btn-md btn-primary-contained btn-big" type="submit" form="login-form" value="submit" id="login">
+                    Sign up
+                </button>
+            </div>
+            <h4>Already have an account? <a href="/Pages/Authentication/login.html">Login</a></h4>
+        </form>
+    </div>
+</body>
+</html>
