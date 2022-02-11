@@ -1,0 +1,21 @@
+/* Filter css */
+
+.filter-nav-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-container, .radio-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ratings {
+    margin-top: -0.5rem;
+}
+
+.category-box, .radio-button {
+    width: 1rem;
+    height: 1rem;
+}
