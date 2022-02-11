@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NemBusket-Home</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/Stylesheets/PageStyles/home.css">
 </head>
 <body>
     <nav class="navbar">        
         <div class="nav-logo">
             <a href="/index.html" class="btn-link">
-                <h2 href="/index.html" class="nav-header text-primary">
-                    Nem<span class="header-span text-primary-hover">Busket</span>
+                <h2 href="/index.html" class="nav-header text-primary header-shadow">
+                    Diagon Alley
                 </h2>
             </a>
         </div>
@@ -41,7 +42,7 @@
                     <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
                 </div>
                 <button class="btn btn-lg icon-lg">
-                    <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
+                    <a href="" class="btn-link text-primary hover-primary">
                         <i class="fa fa-user-circle-o"></i>
                     </a>
                 </button>
@@ -51,5 +52,65 @@
             </button>
         </div>
     </nav> 
+    <div class="main">
+        <div class="product-content">
+            <div class="product product-gryffindor">
+                <img src="/Assets/Gryffindor.png" class="product-image">
+                <a href="Pages/ProductListing/gryffindorListing.html" class="product-btn btn-link">Gryffindor</a>
+                <div class="new-product" id="new-gryffindor">    
+                    <img src="/Assets/Gryffindor-winter.png" class="small-card-img">
+                    <div class="small-card-content">
+                        <h4>New winter arrival</h4>
+                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product product-ravenclaw">
+                <img src="/Assets/Ravenclaw.png" class="product-image">
+                <a href="Pages/ProductListing/ravelclawListing.html" class="product-btn btn-link">Ravenclaw</a>
+                <div class="new-product" id="new-ravenclaw">    
+                    <img src="/Assets/Ravenclaw-winter.png" class="small-card-img">
+                    <div class="small-card-content">
+                        <h4>New winter arrival</h4>
+                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product product-hufflepuff">
+                <img src="/Assets/Hufflepuff.png" class="product-image">
+                <a href="Pages/ProductListing/hufflepuffListing.html" class="product-btn btn-link">Hufflepuff</a>
+                <div class="new-product" id="new-hufflepuff">    
+                    <img src="/Assets/Hufflepuff-winter.png" class="small-card-img">
+                    <div class="small-card-content">
+                        <h4>New winter arrival</h4>
+                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product product-slytherin">
+                <img src="/Assets/Slytherin.png" class="product-image">
+                <a href="Pages/ProductListing/slythernListing.html" class="product-btn btn-link">Slytherin</a>
+                <div class="new-product" id="new-slytherin">    
+                    <img src="/Assets/Slytherin-winter.png" class="small-card-img">
+                    <div class="small-card-content">
+                        <h4>New winter arrival</h4>
+                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<!-- 
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto
+}
+ -->

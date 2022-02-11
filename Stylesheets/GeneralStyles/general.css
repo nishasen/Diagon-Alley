@@ -17,8 +17,12 @@ html, body {
     z-index: 2;
     top: 0;  
     box-shadow: 2px 2px 3px hsla(200, 100%, 15%, 0.1); 
-    background-color: hsla(0, 0%, 98%, 0.3);
-    backdrop-filter: blur(8px);
+    background-color: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.header-shadow {
+    text-shadow: 1px 1px 1px var(--st-primary-color);
 }
 
 .nav-left {
