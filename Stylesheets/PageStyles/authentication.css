@@ -56,9 +56,9 @@
     z-index: 2;
     width: 24rem;
     height: 22rem;
-    box-shadow: 2px 2px 3px hsla(200, 100%, 15%, 0.1); 
-    background-color: hsla(0, 0%, 100%, 0.3);
-    backdrop-filter: blur(4px);
+    box-shadow: var(--st-box-shadow); 
+    background-color: var(--st-background-color);
+    backdrop-filter: var(--st-backdrop-filter);
 }
 
 .field-size {

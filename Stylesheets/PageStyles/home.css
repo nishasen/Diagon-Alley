@@ -1,41 +1,31 @@
-.main {
-   
-}
-
 .product-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.product-gryffindor {
-    background-color: #800000;
+.product-houses {
     width: 100%;
     height: 100vh;
+}
+
+.product-gryffindor {
+    background-color: #800000;
 }
 
 .product-slytherin {
     background-color: #294936;
-    width: 100%;
-    height: 100vh;
 }
 
 .product-ravenclaw {
     background-color: #015783;
-    width: 100%;
-    height: 100vh;
 }
 
 .product-hufflepuff {
     background-color: #FFD63B;
-    width: 100%;
-    height: 100vh;
 }
 
 .product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .product-btn {
@@ -52,9 +42,9 @@
     align-items: center;
     margin: 0.5rem;
     border-radius: 0.5rem;
-    box-shadow: 2px 2px 3px hsla(200, 100%, 15%, 0.1); 
-    background-color: hsla(0, 0%, 100%, 0.3);
-    backdrop-filter: blur(4px);
+    box-shadow: var(--st-box-shadow);
+    background-color: var(--st-background-color);
+    backdrop-filter: var(--st-backdrop-filter);
     cursor: pointer;
 }
 
@@ -77,28 +67,25 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .product-gryffindor {
-        background-color: #800000;
+    .product-houses {
         width: 100%;
         height: 50vh;
+    }
+
+    .product-gryffindor {
+        background-color: #800000;
     }
     
     .product-slytherin {
         background-color: #294936;
-        width: 100%;
-        height: 50vh;
     }
     
     .product-ravenclaw {
         background-color: #015783;
-        width: 100%;
-        height: 50vh;
     }
     
     .product-hufflepuff {
         background-color: #FFD63B;
-        width: 100%;
-        height: 50vh;
     }
 }
 
@@ -106,30 +93,5 @@
     .product-content {
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .product-gryffindor {
-        background-color: #800000;
-        width: 100%;
-        height: 50vh;
-    }
-    
-    .product-slytherin {
-        background-color: #294936;
-        width: 100%;
-        height: 50vh;
-    }
-    
-    .product-ravenclaw {
-        background-color: #015783;
-        width: 100%;
-        height: 50vh;
-    }
-    
-    .product-hufflepuff {
-        background-color: #FFD63B;
-        width: 100%;
-        height: 50vh;
-    }
-    
 }
 
