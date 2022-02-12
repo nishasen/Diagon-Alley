@@ -1,0 +1,97 @@
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product-houses {
+    width: 100%;
+    height: 100vh;
+}
+
+.product-gryffindor {
+    background-color: #800000;
+}
+
+.product-slytherin {
+    background-color: #294936;
+}
+
+.product-ravenclaw {
+    background-color: #015783;
+}
+
+.product-hufflepuff {
+    background-color: #FFD63B;
+}
+
+.product {
+    flex-direction: column;
+}
+
+.product-btn {
+    color: var(--st-white);
+    padding: 1rem;
+    border: 2px solid var(--st-white);
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.new-product {
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--st-box-shadow);
+    background-color: var(--st-background-color);
+    backdrop-filter: var(--st-backdrop-filter);
+    cursor: pointer;
+}
+
+.small-card-img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.product-btn:hover {
+    color: var(--st-black);
+    border: 2px solid var(--st-black);
+}
+
+.new-product:hover {
+    background-color: hsla(0, 0%, 100%, 0.6);
+}
+
+@media only screen and (max-width: 920px) {
+    .product-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-houses {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .product-gryffindor {
+        background-color: #800000;
+    }
+    
+    .product-slytherin {
+        background-color: #294936;
+    }
+    
+    .product-ravenclaw {
+        background-color: #015783;
+    }
+    
+    .product-hufflepuff {
+        background-color: #FFD63B;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .product-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
