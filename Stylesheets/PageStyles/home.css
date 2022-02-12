@@ -60,6 +60,7 @@
 
 .new-product:hover {
     background-color: hsla(0, 0%, 100%, 0.6);
+    color: var(--st-primary-color)
 }
 
 @media only screen and (max-width: 920px) {
