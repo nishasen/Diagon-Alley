@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/Stylesheets/PageStyles/cart.css">
+    <title>DiagonAlley-Cart</title>
+</head>
+<body>
+    <main>
+        <nav class="navbar">        
+            <div class="nav-logo">
+                <a href="/index.html" class="btn-link">
+                    <h2 href="/index.html" class="nav-header text-primary header-shadow">
+                        Diagon Alley
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-left">
+                <input type="search" placeholder="Search your choice" class="basic-textfield-outlined nav-search" id="search">
+                <button class="btn btn-md icon-md search-btn">
+                    <i class="fa fa-search " aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="nav-right">
+                <div class="header-icons">
+                    <div class="badge-icon badge-wrapper">
+                        <button class="btn btn-lg icon-lg">
+                            <a href="/Pages/WishlistManagement/wishlist.html" class="btn-link text-span hover-red">
+                                <i class="fa fa-heart"></i>
+                            </a>
+                        </button>
+                        <span class="badge-number secondary-bgcolor" id="wishlist-items">0</span>
+                    </div>
+                    <div class="badge-icon badge-wrapper">
+                        <button class="btn btn-lg icon-lg">
+                            <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                        </button>
+                        <span class="badge-number secondary-bgcolor" id="cart-items">0</span>
+                    </div>
+                    <button class="btn btn-lg icon-lg btn-user">
+                        <a href="#" class="btn-link text-primary hover-primary">
+                            <i class="fa fa-user-circle-o"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Pages/Authentication/login.html" class="btn-link">Login</a>
+                            <a href="#" class="btn-link">User Profile</a>
+                            <a href="#" class="btn-link">Logout</a>
+                        </div>
+                    </button>
+                </div>
+                <button class="btn btn-md nav-right-btn">
+                    <a href="/Pages/Authentication/login.html" class="btn btn-link btn-primary-contained">Login</a>
+                </button>
+            </div>
+        </nav> 
+        <div class="main dis-grid">
+            <div class="background dis-grid">
+                <div class="product centered product-gryffindor product-houses">
+                    <img src="/Assets/Gryffindor.png" class="img-responsive" alt="Gryffindor">
+                </div>
+                <div class="product centered product-ravenclaw product-houses">
+                    <img src="/Assets/Ravenclaw.png" class="img-responsive" alt="Ravenclaw">
+                </div>
+                <div class="product centered product-hufflepuff product-houses">
+                    <img src="/Assets/Hufflepuff.png" class="img-responsive" alt="Hufflepuff">
+                </div>
+                <div class="product centered product-slytherin product-houses">
+                    <img src="/Assets/Slytherin.png" class="img-responsive" alt="Slytherin">
+                </div>
+            </div>
+            <h3 class="cart-heading">MY CART (<span id="items-in-cart">2</span>)</h3>
+            <div class="cart-price-div dis-flex">
+                <div class="total-price-div dis-flex">
+                    <div class="price-card">
+                        <h4>PRICE DETAILS</h4>
+                        <hr/>
+                        <div class="cart-price-list">
+                            <div class="lists dis-flex">
+                                <p>Price<div id="item-in-cart">(2)</div></p>
+                                <p id="cart-price">Rs.998</p>
+                            </div>
+                            <div class="lists dis-flex">
+                                <p>Discount</p>
+                                <p id="discount-price">-Rs.1000</p> 
+                            </div>
+                            <div class="lists dis-flex">
+                                <p>Delivery charges</p>
+                                <p id="delivery-price">Rs.100</p> 
+                            </div>
+                            <hr/>
+                            <div class="lists dis-flex">
+                                <h4>TOTAL AMOUNT</h4>
+                                <h4 id="total-price">Rs.1098</h4>
+                            </div>
+                        </div>
+                        <hr/>
+                        <p>You will save Rs.1000 on this order</p>
+                        <div class="big-btn-container">
+                            <button class="btn btn-md btn-primary-contained btn-big btn-space">
+                                PLACE ORDER
+                            </button>
+                        </div>
+                    </div>   
+                </div>
+                <div class="cart-div centered">
+                    <div class="cart-card dis-flex">
+                        <div class="items dis-flex">
+                            <span class="badge-text badge-box-square fire-bgcolor badge-over-image">49.99%</span>
+                            <img src="/Assets/Gryffindor-tshirt.png" class="product-image img-responsive" alt="Could not load image...">
+                        </div>
+                        <div class="card-content dis-flex">
+                            <h4>Women's gryffindor T-shirt</h3>
+                            <div class="price-div dis-flex">
+                                <h3>Rs. 499</h3>
+                                <p><del>999</del></p>
+                            </div>
+                            <div class="btn-counter">
+                                <button class="btn btn-md btn-primary-floating btn-floating floating-md" id="increase-cart-item">+</button>
+                                <input type="text" value="1" class="basic-textfield-outlined item-counter" id="items-in-card">
+                                <button class="btn btn-md btn-primary-floating btn-floating floating-md" id="decrease-cart-item">-</button>
+                            </div>
+                            <button class="btn btn-md btn-primary-contained">❤ Move to wishlist</button>
+                            <button class="btn btn-md btn-secondary-contained">Remove from cart</button>
+                        </div>
+                    </div>
+                    <div class="cart-card">
+                        <div class="items">
+                            <span class="badge-text badge-box-square fire-bgcolor badge-over-image">49.99%</span>
+                            <img src="/Assets/Gryffindor-tshirt.png" class="product-image img-responsive" alt="Could not load image...">
+                        </div>
+                        <div class="card-content">
+                            <h4>Women's gryffindor T-shirt</h3>
+                            <div class="price-div">
+                                <h3>Rs. 499</h3>
+                                <p><del>999</del></p>
+                            </div>
+                            <div class="btn-counter">
+                                <button class="btn btn-md btn-primary-floating btn-floating floating-md" id="increase-cart-item">+</button>
+                                <input type="text" value="1" class="basic-textfield-outlined item-counter" id="items-in-card">
+                                <button class="btn btn-md btn-primary-floating btn-floating floating-md" id="decrease-cart-item">-</button>
+                            </div>
+                            <button class="btn btn-md btn-primary-contained">❤ Move to wishlist</button>
+                            <button class="btn btn-md btn-secondary-contained">Remove from cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

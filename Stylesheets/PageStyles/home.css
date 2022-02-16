@@ -78,7 +78,7 @@
     width: 6rem;
     height: 6rem;
     border: 2px solid;
-    border-color: #800000 #015783 #FFD63B #294936;
+    border-color: var(--st-gryffindor) var(--st-ravenclaw) var(--st-hufflepuff) var(--st-slytherin);
     border-radius: 0.5rem;
 }
 
@@ -88,8 +88,7 @@
 }
 
 .new-product:hover {
-    background-color: var(--st-background-color);
-    color: var(--st-primary-color);
+    background-color: hsla(0, 0%, 100%, 0.6);
 }
 
 .new-product:hover .small-card-content {
