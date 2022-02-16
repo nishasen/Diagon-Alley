@@ -1,0 +1,132 @@
+.background {
+    grid-template-columns: 1fr;
+    filter: blur(3px);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+}
+
+.product-houses {
+    width: 100vw;
+    height: 100vh;
+}
+
+.product-gryffindor {
+    background-color: var(--st-gryffindor);
+}
+
+.product-slytherin {
+    background-color: var(--st-slytherin);
+}
+
+.product-ravenclaw {
+    background-color: var(--st-ravenclaw);
+}
+
+.product-hufflepuff {
+    background-color: var(--st-hufflepuff);
+}
+
+.product {
+    flex-direction: column;
+}
+
+.hamburger {
+    margin-left: -1.5rem;
+    visibility: hidden;
+}
+
+.filter-nav {
+    position: fixed;
+    z-index: 5;
+    background-color: var(--st-background-color);
+    background-color: rgba(0,0,0,.7);
+    padding: 1rem;
+    padding-top: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 15rem;
+    height: 100%;
+}
+
+.product-list {
+    margin: 1rem 1rem;
+    margin-left: 16rem;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.product-list-header {
+    z-index: 5;
+}
+
+.product-list-contents {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.product-card {
+    background-color: var(--st-background-color);
+    grid-template-columns: 14rem;
+    grid-template-rows: repeat(6, auto);
+    max-width: 14rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.product-image {
+    background-color: var(--st-background-color);
+    margin: 0  auto;
+    width: 15rem;
+    height: 17rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product-card h4, .price-div, .discount {
+    margin: 0.2rem auto;
+}
+
+.price-div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.discount {
+    font-weight: bold;
+    color: var(--st-primary-color);
+}
+
+.big-btn-container {
+    bottom: 0;
+    width: 14rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .product-list {
+        margin-left: 1rem;
+    }
+
+    .filter-nav {
+        display: none;
+        z-index: 6;
+    }
+
+    .filter-nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        cursor: pointer;
+        padding-right: 0.2rem;
+        color: var(--st-primary-color);
+        margin-left: 0;
+        visibility: visible;
+    }
+    
+}

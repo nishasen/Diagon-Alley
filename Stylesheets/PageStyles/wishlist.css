@@ -1,0 +1,131 @@
+.main {
+    grid-template-columns: auto;   
+}
+
+.background {
+    grid-template-columns: repeat(2, 1fr);
+    filter: blur(3px);
+    position: fixed;
+    z-index: 0;
+    top: 0;
+}
+
+.product-houses {
+    width: 50vw;
+    height: 50vh;
+}
+
+.product-gryffindor {
+    background-color: var(--st-gryffindor);  
+}
+
+.product-slytherin {
+    background-color: var(--st-slytherin);
+}
+
+.product-ravenclaw {
+    background-color: var(--st-ravenclaw);
+}
+
+.product-hufflepuff {
+    background-color: var(--st-hufflepuff);
+}
+
+.product {
+    flex-direction: column
+}
+
+.house-links {
+    z-index: 5;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.house-avatar {
+    position: absolute;
+    left: 2rem;
+}
+
+.gryffindor {
+    top: 2rem;
+}
+
+.ravenclaw {
+    top: 6rem;
+}
+
+.hufflepuff {
+    top: 10rem;
+}
+
+.slytherin {
+    top: 14rem;
+}
+
+.house-avatar:hover {
+    opacity: 0.8;
+}
+
+.wishlist-heading {
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+    margin-top: 0.5rem;
+    color: var(--st-white);
+    font-family: var(--st-header-text);
+    margin-bottom: 1rem;
+}
+
+.wishlist-div {
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0 4rem;
+    margin-bottom: 2rem;
+}
+
+.product-card {
+    background-color: var(--st-background-color);
+    grid-template-columns: 14rem;
+    grid-template-rows: repeat(6, auto);
+    max-width: 14rem;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.product-image, .btn-wishlist {
+    grid-area: 1/1/2/2;
+}
+
+.btn-wishlist {
+    color: var(--st-red);
+}
+
+.product-image {
+    background-color: var(--st-background-color);
+    margin: 0  auto;
+    width: 15rem;
+    height: 17rem;
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product-card h4, .price-div, .discount {
+    margin: 0.2rem auto;
+}
+
+.price-div {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.discount {
+    font-weight: bold;
+    color: var(--st-primary-color);
+}
+
+.big-btn-container {
+    bottom: 0;
+    width: 14rem;
+}
