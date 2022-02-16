@@ -65,24 +65,20 @@
                 <img src="/Assets/Gryffindor.png" class="img-responsive" alt="Gryffindor">
             </div>
         </div>
-        <div class="filter-nav" id="filter-product">
+        <div class="filter-nav">
             <div class="filter-nav-top">
-                <h3 class="text-white">Filters</h3>
-                <a href="" class="text-white hover-red">Clear</a>
+                <h3>Filters</h3>
+                <a href="" class="text-black hover-red">Clear</a>
             </div>
-            <h4 class="text-white dis-inline">Price Rs.<div id="step-slider-value" class="dis-inline"></div></h4>
+            <h4>Price</h4>
             <div class="slider-container">
-                <input type="range" min="500" max="2500" value="1500" list="ticks" class="slider" id="step-slider">
-                <datalist id="ticks">
-                    <option value="500" label="500"></option>
-                    <option value="1500" label="1500"></option> 
-                    <option value="2500" label="2500"></option>
-                </datalist>
+                <input type="range" min="0" max="2500" value="1250" class="slider" id="step-slider">
+                <div class="value-container">Range : Rs.<div id="step-slider-value"></div></div>
             </div>
-            <h4 class="text-white">Category</h4>
+            <h4>Category</h4>
             <div class="checkbox-container">          
                 <input type="checkbox" name="category" value="men-clothing" class="category-box">
-                <label for="men-clothing" class="text-white">
+                <label for="men-clothing" class="text-black">
                     <p>Men's clothing</p>
                 </label>
             </div> 
@@ -93,6 +89,7 @@
                 </label>
             </div>
             <h4 class="text-white">Ratings</h4>
+            <h4>Ratings</h4>
             <div class="radio-container">
                 <input type="radio" name="ratings" value="4-and-up" class="radio-button">
                 <span class="ratings">

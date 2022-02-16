@@ -1,6 +1,6 @@
 :root {
     --st-primary-color: hsl(200, 100%, 15%);
-    --st-primary-hover: hsl(200, 100%, 35%);
+    --st-primary-hover: hsl(200, 100%, 30%);
     --st-primary-disabled: hsl(200, 100%, 84%);
     --st-secondary-color: hsl(40, 100%, 45%);
     --st-secondary-hover: hsl(40, 100%, 72%);
@@ -19,11 +19,12 @@
     --st-darkgrey: hsl(211, 17%, 20%);
     --st-lightgrey: hsl(0, 0%, 85%);
     --st-middlegrey: hsl(0, 0%, 70%);
-    --st-bordergrey: hsl(0, 0%, 50%);
+    --st-bordergrey: hsl(0, 0%, 40%);
     --st-darkred: hsl(0, 100%, 30%);
     --st-red: hsl(0, 100%, 50%);
     --st-lightred: hsl(0, 100%, 80%);
     --st-black: hsl(0, 0%, 0%);
+    --st-body-background: hsl(211, 61%, 10%);
     --st-white: hsl(0, 0%, 100%);
     --st-header-text: 'Abril Fatface', cursive;
     --st-subheader-text: 'Bai Jamjuree', sans-serif;
