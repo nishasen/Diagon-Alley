@@ -9,97 +9,109 @@
     <link rel="stylesheet" href="/Stylesheets/PageStyles/home.css">
 </head>
 <body>
-    <nav class="navbar">        
-        <div class="nav-logo">
-            <a href="/index.html" class="btn-link">
-                <h2 href="/index.html" class="nav-header text-primary header-shadow">
-                    Diagon Alley
-                </h2>
-            </a>
-        </div>
-        <div class="nav-left">
-            <input type="search" placeholder="Search your choice" class="basic-textfield-outlined nav-search" id="search">
-            <button class="btn btn-md icon-md search-btn">
-                <i class="fa fa-search " aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="nav-right">
-            <div class="header-icons">
-                <div class="badge-icon badge-wrapper">
-                    <button class="btn btn-lg icon-lg">
-                        <a href="/Pages/WishlistManagement/wishlist.html" class="btn-link text-span hover-red">
-                            <i class="fa fa-heart"></i>
-                        </a>
-                    </button>
-                    <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
-                </div>
-                <div class="badge-icon badge-wrapper">
-                    <button class="btn btn-lg icon-lg">
-                        <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </button>
-                    <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
-                </div>
-                <button class="btn btn-lg icon-lg">
-                    <a href="" class="btn-link text-primary hover-primary">
-                        <i class="fa fa-user-circle-o"></i>
-                    </a>
+    <main>
+        <nav class="navbar">        
+            <div class="nav-logo">
+                <a href="/index.html" class="btn-link">
+                    <h2 href="/index.html" class="nav-header text-primary header-shadow">
+                        Diagon Alley
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-left">
+                <input type="search" placeholder="Search your choice" class="basic-textfield-outlined nav-search" id="search">
+                <button class="btn btn-md icon-md search-btn">
+                    <i class="fa fa-search " aria-hidden="true"></i>
                 </button>
             </div>
-            <button class="btn btn-md nav-right-btn">
-                <a href="/Pages/Authentication/login.html" class="btn btn-link btn-primary-contained">Login</a>
-            </button>
+            <div class="nav-right">
+                <div class="header-icons">
+                    <div class="badge-icon badge-wrapper">
+                        <button class="btn btn-lg icon-lg">
+                            <a href="/Pages/WishlistManagement/wishlist.html" class="btn-link text-span hover-red">
+                                <i class="fa fa-heart"></i>
+                            </a>
+                        </button>
+                        <span class="badge-number secondary-bgcolor" id="wishlist-items">0</span>
+                    </div>
+                    <div class="badge-icon badge-wrapper">
+                        <button class="btn btn-lg icon-lg">
+                            <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                        </button>
+                        <span class="badge-number secondary-bgcolor" id="cart-items">0</span>
+                    </div>
+                    <button class="btn btn-lg icon-lg btn-user">
+                        <a href="" class="btn-link text-primary hover-primary">
+                            <i class="fa fa-user-circle-o"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Pages/Authentication/login.html" class="btn-link">Login</a>
+                            <a href="" class="btn-link">User Profile</a>
+                            <a href="" class="btn-link">Logout</a>
+                        </div>
+                    </button>
+                </div>
+                <button class="btn btn-md nav-right-btn">
+                    <a href="/Pages/Authentication/login.html" class="btn btn-link btn-primary-contained">Login</a>
+                </button>
+            </div>
+        </nav> 
+        <div class="main">
+            <div class="background dis-grid">
+                <div class="product centered product-gryffindor product-houses">
+                    <img src="/Assets/Gryffindor.png" class="house-image img-responsive">  
+                    <a href="Pages/ProductListing/gryffindorListing.html" class="product-btn btn-link">Gryffindor</a>  
+                    <div class="new-product" id="new-gryffindor">  
+                        <span class="badge-text badge-box-square fire-bgcolor badge-over-image">New</span>
+                        <img src="/Assets/Gryffindor-winter.png" class="small-card-img">
+                        <a href="" class="small-card-content">
+                            <h4>New winter arrival</h4>
+                            <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                        </a>
+                    </div>  
+                </div>
+                <div class="product centered product-ravenclaw product-houses">
+                    <img src="/Assets/Ravenclaw.png" class="house-image img-responsive">
+                    <a href="Pages/ProductListing/ravelclawListing.html" class="product-btn btn-link">Ravenclaw</a>
+                    <div class="new-product" id="new-ravenclaw">    
+                        <span class="badge-text badge-box-square fire-bgcolor badge-over-image">New</span>
+                        <img src="/Assets/Ravenclaw-winter.png" class="small-card-img">
+                        <div href="" class="small-card-content">
+                            <h4>New winter arrival</h4>
+                            <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="product centered product-hufflepuff product-houses">
+                    <img src="/Assets/Hufflepuff.png" class="house-image img-responsive"> 
+                    <a href="Pages/ProductListing/hufflepuffListing.html" class="product-btn btn-link">Hufflepuff</a>
+                    <div class="new-product" id="new-hufflepuff">    
+                        <span class="badge-text badge-box-square fire-bgcolor badge-over-image">New</span>
+                        <img src="/Assets/Hufflepuff-winter.png" class="small-card-img">
+                        <div href="" class="small-card-content">
+                            <h4>New winter arrival</h4>
+                            <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                        </div>
+                    </div>   
+                </div>
+                <div class="product centered product-slytherin product-houses">
+                    <img src="/Assets/Slytherin.png" class="house-image img-responsive">
+                    <a href="Pages/ProductListing/slythernListing.html" class="product-btn btn-link">Slytherin</a>
+                    <div class="new-product" id="new-slytherin">    
+                        <img src="/Assets/Slytherin-winter.png" class="small-card-img">
+                        <span class="badge-text badge-box-square fire-bgcolor badge-over-image">New</span>
+                        <div href="" class="small-card-content">
+                            <h4>New winter arrival</h4>
+                            <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </nav> 
-    <div class="main">
-        <div class="product-content">
-            <div class="product centered product-gryffindor product-houses">
-                <img src="/Assets/Gryffindor.png" class="product-image">
-                <a href="Pages/ProductListing/gryffindorListing.html" class="product-btn btn-link">Gryffindor</a>
-                <div class="new-product" id="new-gryffindor">    
-                    <img src="/Assets/Gryffindor-winter.png" class="small-card-img">
-                    <div class="small-card-content">
-                        <h4>New winter arrival</h4>
-                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product centered product-ravenclaw product-houses">
-                <img src="/Assets/Ravenclaw.png" class="product-image">
-                <a href="Pages/ProductListing/ravelclawListing.html" class="product-btn btn-link">Ravenclaw</a>
-                <div class="new-product" id="new-ravenclaw">    
-                    <img src="/Assets/Ravenclaw-winter.png" class="small-card-img">
-                    <div class="small-card-content">
-                        <h4>New winter arrival</h4>
-                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product centered product-hufflepuff product-houses">
-                <img src="/Assets/Hufflepuff.png" class="product-image">
-                <a href="Pages/ProductListing/hufflepuffListing.html" class="product-btn btn-link">Hufflepuff</a>
-                <div class="new-product" id="new-hufflepuff">    
-                    <img src="/Assets/Hufflepuff-winter.png" class="small-card-img">
-                    <div class="small-card-content">
-                        <h4>New winter arrival</h4>
-                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="product centered product-slytherin product-houses">
-                <img src="/Assets/Slytherin.png" class="product-image">
-                <a href="Pages/ProductListing/slythernListing.html" class="product-btn btn-link">Slytherin</a>
-                <div class="new-product" id="new-slytherin">    
-                    <img src="/Assets/Slytherin-winter.png" class="small-card-img">
-                    <div class="small-card-content">
-                        <h4>New winter arrival</h4>
-                        <p>Check out the new winter wizard collection and upgrade your wadrobe!!!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
 
