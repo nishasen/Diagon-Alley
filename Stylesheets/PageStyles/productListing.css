@@ -12,19 +12,19 @@
 }
 
 .product-gryffindor {
-    background-color: #800000;
+    background-color: var(--st-gryffindor);
 }
 
 .product-slytherin {
-    background-color: #294936;
+    background-color: var(--st-slytherin);
 }
 
 .product-ravenclaw {
-    background-color: #015783;
+    background-color: var(--st-ravenclaw);
 }
 
 .product-hufflepuff {
-    background-color: #FFD63B;
+    background-color: var(--st-hufflepuff);
 }
 
 .product {
@@ -78,17 +78,12 @@
     position: relative;
 }
 
-.product-image, .btn-wishlist {
-    grid-area: 1/1/2/2;
-}
-
 .product-image {
     background-color: var(--st-background-color);
     margin: 0  auto;
     width: 15rem;
     height: 17rem;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .product-card h4, .price-div, .discount {

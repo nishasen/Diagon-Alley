@@ -32,7 +32,13 @@
     --st-floating-btn-shadow: 2px 5px 5px  rgba(0,0,0,0.2);
     --st-btn-txt-shadow: 5px 5px 10px var(--st-black);
     --st-text-shadow: 2px 2px 3px var(--st-white);
-    --st-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --st-box-shadow: 2px 2px 3px hsla(200, 100%, 15%, 0.1);
+    --st-background-color: hsla(0, 0%, 100%, 0.3);
+    --st-backdrop-filter: blur(4px);
+    --st-gryffindor: #800000;
+    --st-hufflepuff: #FFD63B;
+    --st-ravenclaw: #015783;
+    --st-slytherin: #294936;
 }
 
 /* 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
