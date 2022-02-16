@@ -1,10 +1,12 @@
-.product-content {
+.background {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    position: fixed;
+    top: 0;
 }
 
 .product-houses {
-    width: 100%;
+    width: 25vw;
     height: 100vh;
 }
 
@@ -33,14 +35,14 @@
     padding: 1rem;
     border: 2px solid var(--st-white);
     border-radius: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem
 }
 
 .new-product {
     display: flex;
     padding: 0.5rem;
     align-items: center;
-    margin: 0.5rem;
+    position: relative;
     border-radius: 0.5rem;
     box-shadow: var(--st-box-shadow);
     background-color: var(--st-background-color);
@@ -48,9 +50,36 @@
     cursor: pointer;
 }
 
+.small-card-content {
+    visibility: hidden;
+    position: absolute;
+    border: 2px solid;
+    width: 12rem;
+    background-color: rgba(0,0,0,.9);
+    color: var(--st-white);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    top: -7rem;
+    left: -2rem;
+}
+
+.small-card-content h4 {
+    color: var(--st-primary-disabled);
+}
+
+.small-card-content p {
+    color: var(--st-secondary-disabled);
+}
+
 .small-card-img {
     width: 6rem;
     height: 6rem;
+    border: 2px solid;
+    border-color: var(--st-gryffindor) var(--st-ravenclaw) var(--st-hufflepuff) var(--st-slytherin);
+    border-radius: 0.5rem;
 }
 
 .product-btn:hover {
@@ -60,39 +89,63 @@
 
 .new-product:hover {
     background-color: hsla(0, 0%, 100%, 0.6);
-    color: var(--st-primary-color)
+}
+
+.new-product:hover .small-card-content {
+    visibility: visible;
+}
+
+.small-card-content p:hover {
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 920px) {
-    .product-content {
-        grid-template-columns: repeat(2, 1fr);
+    .background {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .house-image {
+        width: 7rem;
     }
 
     .product-houses {
-        width: 100%;
-        height: 50vh;
+        width: 25vw;
+        height: 100vh;
     }
 
-    .product-gryffindor {
-        background-color: #800000;
+    .product-btn {
+        padding: 0.5rem;
     }
-    
-    .product-slytherin {
-        background-color: #294936;
-    }
-    
-    .product-ravenclaw {
-        background-color: #015783;
-    }
-    
-    .product-hufflepuff {
-        background-color: #FFD63B;
+
+    .small-card-img {
+        width: 5rem;
+        height: 5rem;
     }
 }
 
 @media only screen and (max-width: 520px) {
-    .product-content {
-        grid-template-columns: repeat(1, 1fr);
+
+    .background {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-houses {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .small-card-img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .small-card-content {
+        width: 10rem;
+        height: 7rem;
+        top: -5rem;
+    }
+
+    .small-card-content h4,p {
+        font-size: 0.6rem;
     }
 }
-

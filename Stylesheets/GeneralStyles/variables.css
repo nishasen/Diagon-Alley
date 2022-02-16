@@ -32,9 +32,9 @@
     --st-comp-lib-text: 'Bai Jamjuree', sans-serif;
     --st-floating-btn-shadow: 2px 5px 5px  rgba(0,0,0,0.2);
     --st-btn-txt-shadow: 5px 5px 10px var(--st-black);
-    --st-text-shadow: 2px 2px 3px var(--st-white);
+    --st-text-shadow: 1px 1px 1px var(--st-white);
     --st-box-shadow: 2px 2px 3px hsla(200, 100%, 15%, 0.1);
-    --st-background-color: hsla(0, 0%, 100%, 0.3);
+    --st-background-color: hsla(0, 0%, 100%, 0.5);
     --st-backdrop-filter: blur(4px);
     --st-gryffindor: #800000;
     --st-hufflepuff: #FFD63B;
