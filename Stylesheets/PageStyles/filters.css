@@ -1,0 +1,42 @@
+.filter-nav-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-container {
+    gap: 0.5rem;
+}
+
+.slider {
+    width: 100%;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    color: var(--st-white);
+    width: 100%;
+}
+
+.checkbox-container, .radio-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ratings {
+    margin-top: -0.5rem;
+}
+
+.category-box, .radio-button {
+    width: 1rem;
+    height: 1rem;
+}
+
+.house-links {
+    gap: 0.5rem;
+}
+
+.house-avatar:hover {
+    opacity: 0.7;
+}
