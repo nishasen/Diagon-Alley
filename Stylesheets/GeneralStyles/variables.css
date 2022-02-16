@@ -35,7 +35,11 @@
     --st-text-shadow: 2px 2px 3px var(--st-white);
     --st-box-shadow: 2px 2px 3px hsla(200, 100%, 15%, 0.1);
     --st-background-color: hsla(0, 0%, 100%, 0.3);
-    --st-backdrop-filter: blur(4px);;
+    --st-backdrop-filter: blur(4px);
+    --st-gryffindor: #800000;
+    --st-hufflepuff: #FFD63B;
+    --st-ravenclaw: #015783;
+    --st-slytherin: #294936;
 }
 
 /* 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */

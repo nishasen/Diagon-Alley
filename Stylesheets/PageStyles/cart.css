@@ -16,19 +16,19 @@
 }
 
 .product-gryffindor {
-    background-color: #800000;  
+    background-color: var(--st-gryffindor);  
 }
 
 .product-slytherin {
-    background-color: #294936;
+    background-color: var(--st-slytherin);
 }
 
 .product-ravenclaw {
-    background-color: #015783;
+    background-color: var(--st-ravenclaw);
 }
 
 .product-hufflepuff {
-    background-color: #FFD63B;
+    background-color: var(--st-hufflepuff);
 }
 
 .product {
@@ -46,9 +46,6 @@
 
 
 .cart-price-div {
-     /* grid-template-columns: repeat(2, 1fr); 
-     grid-template-rows: repeat(1, 1fr); */
-     display: flex;
      justify-content: center;
      flex-wrap: wrap;
      gap: 2rem;
@@ -57,14 +54,10 @@
 }
 
 .cart-div {
-    /* grid-area: 1/1/2/2; */
-    display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
 .cart-card {
-    display: flex;
     flex-wrap: wrap;
     background-color: var(--st-background-color);
     border-radius: 0.5rem;
@@ -73,7 +66,6 @@
 }
 
 .items {
-    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
@@ -82,8 +74,7 @@
 
 .product-image {
     background-color: var(--st-background-color);
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
     width: 10rem;
     height: 14.5rem;
 }
@@ -95,13 +86,11 @@
 .card-content {
     padding-left: 1rem;
     padding-top: 0.2rem;
-    display: flex;
     flex-direction: column;
     gap: 0.5rem
 }
 
 .price-div {
-    display: flex;
     gap: 0.5rem;
     align-items: center;
 }
@@ -112,8 +101,6 @@
 }
 
 .total-price-div {
-    /* grid-area: 1/2/2/3; */
-    display: flex;
     justify-content: center;
 }
 
@@ -131,7 +118,6 @@
 }
 
 .lists {
-   display: flex;
    justify-content: space-between;
 }
 
