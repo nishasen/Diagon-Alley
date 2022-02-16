@@ -9,88 +9,95 @@
     <link rel="stylesheet" href="/Stylesheets/PageStyles/authentication.css">
 </head>
 <body>
-    <nav class="navbar">        
-        <div class="nav-logo">
-            <a href="/index.html" class="btn-link">
-                <h2 href="/index.html" class="nav-header text-primary header-shadow">
-                    Diagon Alley
-                </h2>
-            </a>
-        </div>
-        <div class="nav-left">
-            <input type="search" placeholder="Search your choice" class="basic-textfield-outlined nav-search" id="search">
-            <button class="btn btn-md icon-md search-btn">
-                <i class="fa fa-search " aria-hidden="true"></i>
-            </button>
-        </div>
-        <div class="nav-right">
-            <div class="header-icons">
-                <div class="badge-icon badge-wrapper">
-                    <button class="btn btn-lg icon-lg">
-                        <a href="/Pages/WishlistManagement/wishlist.html" class="btn-link text-span hover-red">
-                            <i class="fa fa-heart"></i>
-                        </a>
-                    </button>
-                    <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
-                </div>
-                <div class="badge-icon badge-wrapper">
-                    <button class="btn btn-lg icon-lg">
-                        <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
-                            <i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </button>
-                    <span class="badge-number secondary-bgcolor" id="wishlist-items">4</span>
-                </div>
-                <button class="btn btn-lg icon-lg">
-                    <a href="" class="btn-link text-primary hover-primary">
-                        <i class="fa fa-user-circle-o"></i>
-                    </a>
+    <main>
+        <nav class="navbar">        
+            <div class="nav-logo">
+                <a href="/index.html" class="btn-link">
+                    <h2 href="/index.html" class="nav-header text-primary header-shadow">
+                        Diagon Alley
+                    </h2>
+                </a>
+            </div>
+            <div class="nav-left">
+                <input type="search" placeholder="Search your choice" class="basic-textfield-outlined nav-search" id="search">
+                <button class="btn btn-md icon-md search-btn">
+                    <i class="fa fa-search " aria-hidden="true"></i>
                 </button>
             </div>
-            <button class="btn btn-md nav-right-btn">
-                <a href="/Pages/Authentication/signup.html" class="btn btn-link btn-primary-contained">Sign up</a>
-            </button>
-        </div>
-    </nav> 
-    <div class="main dis-grid">
-        <div class="background">
+            <div class="nav-right">
+                <div class="header-icons">
+                    <div class="badge-icon badge-wrapper">
+                        <button class="btn btn-lg icon-lg">
+                            <a href="/Pages/WishlistManagement/wishlist.html" class="btn-link text-span hover-red">
+                                <i class="fa fa-heart"></i>
+                            </a>
+                        </button>
+                        <span class="badge-number secondary-bgcolor" id="wishlist-items">0</span>
+                    </div>
+                    <div class="badge-icon badge-wrapper">
+                        <button class="btn btn-lg icon-lg">
+                            <a href="/Pages/CartManagement/cart.html" class="btn-link text-primary hover-primary">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                        </button>
+                        <span class="badge-number secondary-bgcolor" id="cart-items">0</span>
+                    </div>
+                    <button class="btn btn-lg icon-lg btn-user">
+                        <a href="#" class="btn-link text-primary hover-primary">
+                            <i class="fa fa-user-circle-o"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="Pages/Authentication/login.html" class="btn-link">Login</a>
+                            <a href="#" class="btn-link">User Profile</a>
+                            <a href="#" class="btn-link">Logout</a>
+                        </div>
+                    </button>
+                </div>
+                <button class="btn btn-md nav-right-btn">
+                    <a href="/Pages/Authentication/signup.html" class="btn btn-link btn-primary-contained">Sign up</a>
+                </button>
+            </div>
+        </nav> 
+        <div class="background dis-grid">
             <div class="product centered product-gryffindor product-houses">
-                <img src="/Assets/Gryffindor.png" class="product-image">
+                <img src="/Assets/Gryffindor.png" class="img-responsive">
             </div>
             <div class="product centered product-ravenclaw product-houses">
-                <img src="/Assets/Ravenclaw.png" class="product-image">
+                <img src="/Assets/Ravenclaw.png" class="img-responsive">
             </div>
             <div class="product centered product-hufflepuff product-houses">
-                <img src="/Assets/Hufflepuff.png" class="product-image">
+                <img src="/Assets/Hufflepuff.png" class="img-responsive">
             </div>
             <div class="product centered product-slytherin product-houses">
-                <img src="/Assets/Slytherin.png" class="product-image">
+                <img src="/Assets/Slytherin.png" class="img-responsive">
             </div>
         </div>
-        <form class="auth-cards">
-            <h2 class="text-header">Login</h2>
-            <div class="basic-textfield-outlined textfield-label field-size">
-                <label for="textfield-label-outlined label-color">Email</label>
-                <input type="text" name="outlined" id="basic-outlined" class="filled-color" id="email">
-            </div>
-            <div class="basic-textfield-outlined textfield-label field-size">
-                <label for="textfield-label-outlined label-color">Password</label>
-                <input type="password" name="outlined" id="basic-outlined" class="filled-color" id="password">
-            </div>
-            <div class="auth-div dis-flex">
-                <div class="remember-me dis-flex">
-                    <input type="checkbox" id="remember-me" name="remember-me" value="Remember-me" class="checkbox">
-                    <label for="remember-me" class="text-black"> Remember me</label>
+        <div class="main centered">
+            <form class="auth-cards centered">
+                <h2 class="text-header">Login</h2>
+                <div class="basic-textfield-outlined textfield-label field-size">
+                    <label for="textfield-label-outlined label-color">Email</label>
+                    <input type="text" name="outlined" id="basic-outlined" class="filled-color" id="email">
                 </div>
-                <a href="forgetPassword.html" class="forgot-password btn-link hover-primary">Forgot your password?</a>
-            </div>
-            <div class="big-btn-container">
-                <button class="btn btn-md btn-primary-contained btn-big" type="submit" form="login-form" value="submit">
-                    Login
-                </button>
-            </div>
-            <h4>Do not have an account? <a href="/Pages/Authentication/signup.html">Sign up</a></h4>
-        </form>
-    </div>
+                <div class="basic-textfield-outlined textfield-label field-size">
+                    <label for="textfield-label-outlined label-color">Password</label>
+                    <input type="password" name="outlined" id="basic-outlined" class="filled-color" id="password">
+                </div>
+                <div class="auth-div dis-flex">
+                    <div class="remember-me dis-flex">
+                        <input type="checkbox" id="remember-me" name="remember-me" value="Remember-me" class="checkbox">
+                        <label for="remember-me" class="text-black"> Remember me</label>
+                    </div>
+                    <a href="forgetPassword.html" class="forgot-password btn-link hover-primary">Forgot your password?</a>
+                </div>
+                <div class="big-btn-container">
+                    <button class="btn btn-md btn-primary-contained btn-big" type="submit" form="login-form" value="submit">
+                        Login
+                    </button>
+                </div>
+                <h4>Do not have an account? <a href="/Pages/Authentication/signup.html">Sign up</a></h4>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
