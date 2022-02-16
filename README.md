@@ -37,9 +37,9 @@ These are some screenshots of my project. There is responsiveness in all pages.
  - Login page
 <img width="949" alt="LoginPage" src="https://user-images.githubusercontent.com/43262505/154322786-852314f6-6708-451b-9215-03a64757aa38.PNG">
 
--Cart page
+- Cart page
 <img width="939" alt="CartPage" src="https://user-images.githubusercontent.com/43262505/154322852-6387c130-0cff-4d16-9276-1fc8cb9d28bb.PNG">
 
--Filters 
+- Filters 
 <img width="178" alt="Filters" src="https://user-images.githubusercontent.com/43262505/154322976-b5a31b04-d95a-47d7-9910-d5964bd95c57.PNG">
 
