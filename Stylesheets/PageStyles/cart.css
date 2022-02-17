@@ -35,6 +35,38 @@
     flex-direction: column
 }
 
+.house-links {
+    z-index: 7;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.house-avatar {
+    position: absolute;
+    left: 0.8rem;
+}
+
+.gryffindor {
+    top: 1rem;
+}
+
+.ravenclaw {
+    top: 5rem;
+}
+
+.hufflepuff {
+    top: 9rem;
+}
+
+.slytherin {
+    top: 13rem;
+}
+
+.house-avatar:hover {
+    opacity: 0.8;
+}
+
 .cart-heading {
     display: flex;
     justify-content: center;
@@ -42,6 +74,7 @@
     margin-top: 0.5rem;
     color: var(--st-white);
     font-family: var(--st-header-text);
+    margin-bottom: 1rem;
 }
 
 

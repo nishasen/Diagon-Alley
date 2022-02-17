@@ -36,7 +36,7 @@
 }
 
 .house-links {
-    z-index: 5;
+    z-index: 7;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
@@ -44,23 +44,23 @@
 
 .house-avatar {
     position: absolute;
-    left: 2rem;
+    left: 0.8rem;
 }
 
 .gryffindor {
-    top: 2rem;
+    top: 1rem;
 }
 
 .ravenclaw {
-    top: 6rem;
+    top: 5rem;
 }
 
 .hufflepuff {
-    top: 10rem;
+    top: 9rem;
 }
 
 .slytherin {
-    top: 14rem;
+    top: 13rem;
 }
 
 .house-avatar:hover {
