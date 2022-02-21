@@ -19,7 +19,8 @@ Diagon Alley is an e-commerce website where items are distributed according to h
 - Authentication
   - Sign-up
   - Login
-  - Logout
+  - Logout (blank link added in dropdown of user icon)
+  - Forget Password
 
 ## Project link
 - [Diagon Alley](https://nishasen-diagonalley.netlify.app/)
@@ -32,8 +33,8 @@ These are some screenshots of my project. There is responsiveness in all pages.
  
  - Responsive home page
  <img width="154" alt="Responsiveness" src="https://user-images.githubusercontent.com/43262505/154323030-ddefcff2-047f-4754-b406-6ffdd5bbbc3e.PNG">
+ <img width="157" alt="ResponsiveProductListing" src="https://user-images.githubusercontent.com/43262505/154916537-49c40a0b-5007-41fb-87e5-df5baa2e8c8d.PNG">
 
- 
  - Login page
 <img width="949" alt="LoginPage" src="https://user-images.githubusercontent.com/43262505/154322786-852314f6-6708-451b-9215-03a64757aa38.PNG">
 
@@ -43,3 +44,5 @@ These are some screenshots of my project. There is responsiveness in all pages.
 - Filters 
 <img width="178" alt="Filters" src="https://user-images.githubusercontent.com/43262505/154322976-b5a31b04-d95a-47d7-9910-d5964bd95c57.PNG">
 
+- Product listing page
+<img width="954" alt="ProductListing" src="https://user-images.githubusercontent.com/43262505/154916090-31843380-3953-4076-9759-2cd96eb15b28.PNG">
